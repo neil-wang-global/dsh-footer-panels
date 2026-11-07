@@ -26,6 +26,7 @@
 - [配置：添加你自己的面板](#配置添加你自己的面板)
 - [常见问题](#常见问题)
 - [兼容性](#兼容性)
+- [改动明细](./CHANGES-zh.md)
 - [License](#license)
 
 ---
@@ -416,6 +417,10 @@ const ICONS = {
 | 平台 | DSH Web（浏览器侧插件，纯 DOM + React，无宿主端逻辑） |
 
 唯一依赖的 DOM 契约是插件的底部按钮 class（示例中为 `.ps-footer-action` / `.pt-footer-action`）。上游若改名，改 `launcher` 一处即可，不需要改任何插件源码。
+
+## 改动明细
+
+见 [CHANGES-zh.md](./CHANGES-zh.md)：为什么做这个改动、选择方案的过程、两个示例插件的改动情况（**源码零改动**）、profile 配置改了什么、以及变更前后对比。
 
 ## License
 

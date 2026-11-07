@@ -13,7 +13,10 @@
     "index.js",
     "client.js",
     "cordis.patch.yml",
-    "locale/*.json"
+    "locale/*.json",
+    "README.md",
+    "CHANGES-zh.md",
+    "LICENSE"
   ],
   "dsh": {
     "bundle": {
