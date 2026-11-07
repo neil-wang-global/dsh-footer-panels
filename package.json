@@ -1,0 +1,53 @@
+{
+  "name": "dsh-footer-panels",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Promotes footer-overlay plugins (POMASA Studio, Pictor) to first-class sidebar panel entries, so they do not depend on their sidebar.footer.action buttons (which dsh-claude-style swallows into the account popover).",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "cordis",
+    "sidebar",
+    "panellist",
+    "pomasa-studio",
+    "pictor",
+    "dsh-claude-style"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neil-wang-global/dsh-footer-panels.git"
+  },
+  "homepage": "https://github.com/neil-wang-global/dsh-footer-panels",
+  "bugs": {
+    "url": "https://github.com/neil-wang-global/dsh-footer-panels/issues"
+  },
+  "author": "Neil Wang"
+}
